@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC58F6A51AC938B500041E66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6A41AC938B500041E66 /* main.m */; };
+		DC58F6A81AC938B500041E66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6A71AC938B500041E66 /* AppDelegate.m */; };
+		DC58F6AB1AC938B500041E66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6AA1AC938B500041E66 /* ViewController.m */; };
+		DC58F6AE1AC938B500041E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6AC1AC938B500041E66 /* Main.storyboard */; };
+		DC58F6B01AC938B500041E66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6AF1AC938B500041E66 /* Images.xcassets */; };
+		DC58F6B31AC938B500041E66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6B11AC938B500041E66 /* LaunchScreen.xib */; };
+		DC58F6BF1AC938B600041E66 /* HangmanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6BE1AC938B600041E66 /* HangmanTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC58F6B91AC938B600041E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC58F6971AC938B500041E66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC58F69E1AC938B500041E66;
+			remoteInfo = Hangman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC58F69F1AC938B500041E66 /* Hangman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hangman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC58F6A31AC938B500041E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC58F6A41AC938B500041E66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC58F6A61AC938B500041E66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC58F6A71AC938B500041E66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC58F6A91AC938B500041E66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DC58F6AA1AC938B500041E66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DC58F6AD1AC938B500041E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC58F6AF1AC938B500041E66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC58F6B21AC938B500041E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC58F6B81AC938B600041E66 /* HangmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HangmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC58F6BD1AC938B600041E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC58F6BE1AC938B600041E66 /* HangmanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HangmanTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC58F69C1AC938B500041E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58F6B51AC938B600041E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC58F6961AC938B500041E66 = {
+			isa = PBXGroup;
+			children = (
+				DC58F6A11AC938B500041E66 /* Hangman */,
+				DC58F6BB1AC938B600041E66 /* HangmanTests */,
+				DC58F6A01AC938B500041E66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC58F6A01AC938B500041E66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC58F69F1AC938B500041E66 /* Hangman.app */,
+				DC58F6B81AC938B600041E66 /* HangmanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC58F6A11AC938B500041E66 /* Hangman */ = {
+			isa = PBXGroup;
+			children = (
+				DC58F6A61AC938B500041E66 /* AppDelegate.h */,
+				DC58F6A71AC938B500041E66 /* AppDelegate.m */,
+				DC58F6A91AC938B500041E66 /* ViewController.h */,
+				DC58F6AA1AC938B500041E66 /* ViewController.m */,
+				DC58F6AC1AC938B500041E66 /* Main.storyboard */,
+				DC58F6AF1AC938B500041E66 /* Images.xcassets */,
+				DC58F6B11AC938B500041E66 /* LaunchScreen.xib */,
+				DC58F6A21AC938B500041E66 /* Supporting Files */,
+			);
+			path = Hangman;
+			sourceTree = "<group>";
+		};
+		DC58F6A21AC938B500041E66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC58F6A31AC938B500041E66 /* Info.plist */,
+				DC58F6A41AC938B500041E66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC58F6BB1AC938B600041E66 /* HangmanTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC58F6BE1AC938B600041E66 /* HangmanTests.m */,
+				DC58F6BC1AC938B600041E66 /* Supporting Files */,
+			);
+			path = HangmanTests;
+			sourceTree = "<group>";
+		};
+		DC58F6BC1AC938B600041E66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC58F6BD1AC938B600041E66 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC58F69E1AC938B500041E66 /* Hangman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC58F6C21AC938B600041E66 /* Build configuration list for PBXNativeTarget "Hangman" */;
+			buildPhases = (
+				DC58F69B1AC938B500041E66 /* Sources */,
+				DC58F69C1AC938B500041E66 /* Frameworks */,
+				DC58F69D1AC938B500041E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hangman;
+			productName = Hangman;
+			productReference = DC58F69F1AC938B500041E66 /* Hangman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC58F6B71AC938B600041E66 /* HangmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC58F6C51AC938B600041E66 /* Build configuration list for PBXNativeTarget "HangmanTests" */;
+			buildPhases = (
+				DC58F6B41AC938B600041E66 /* Sources */,
+				DC58F6B51AC938B600041E66 /* Frameworks */,
+				DC58F6B61AC938B600041E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC58F6BA1AC938B600041E66 /* PBXTargetDependency */,
+			);
+			name = HangmanTests;
+			productName = HangmanTests;
+			productReference = DC58F6B81AC938B600041E66 /* HangmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC58F6971AC938B500041E66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = sohyeonlee;
+				TargetAttributes = {
+					DC58F69E1AC938B500041E66 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					DC58F6B71AC938B600041E66 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DC58F69E1AC938B500041E66;
+					};
+				};
+			};
+			buildConfigurationList = DC58F69A1AC938B500041E66 /* Build configuration list for PBXProject "Hangman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC58F6961AC938B500041E66;
+			productRefGroup = DC58F6A01AC938B500041E66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC58F69E1AC938B500041E66 /* Hangman */,
+				DC58F6B71AC938B600041E66 /* HangmanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC58F69D1AC938B500041E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58F6AE1AC938B500041E66 /* Main.storyboard in Resources */,
+				DC58F6B31AC938B500041E66 /* LaunchScreen.xib in Resources */,
+				DC58F6B01AC938B500041E66 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58F6B61AC938B600041E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC58F69B1AC938B500041E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58F6AB1AC938B500041E66 /* ViewController.m in Sources */,
+				DC58F6A81AC938B500041E66 /* AppDelegate.m in Sources */,
+				DC58F6A51AC938B500041E66 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC58F6B41AC938B600041E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC58F6BF1AC938B600041E66 /* HangmanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC58F6BA1AC938B600041E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC58F69E1AC938B500041E66 /* Hangman */;
+			targetProxy = DC58F6B91AC938B600041E66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC58F6AC1AC938B500041E66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC58F6AD1AC938B500041E66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC58F6B11AC938B500041E66 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC58F6B21AC938B500041E66 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC58F6C01AC938B600041E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC58F6C11AC938B600041E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC58F6C31AC938B600041E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hangman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC58F6C41AC938B600041E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Hangman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DC58F6C61AC938B600041E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HangmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangman.app/Hangman";
+			};
+			name = Debug;
+		};
+		DC58F6C71AC938B600041E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HangmanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hangman.app/Hangman";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC58F69A1AC938B500041E66 /* Build configuration list for PBXProject "Hangman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC58F6C01AC938B600041E66 /* Debug */,
+				DC58F6C11AC938B600041E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC58F6C21AC938B600041E66 /* Build configuration list for PBXNativeTarget "Hangman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC58F6C31AC938B600041E66 /* Debug */,
+				DC58F6C41AC938B600041E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DC58F6C51AC938B600041E66 /* Build configuration list for PBXNativeTarget "HangmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC58F6C61AC938B600041E66 /* Debug */,
+				DC58F6C71AC938B600041E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC58F6971AC938B500041E66 /* Project object */;
+}
