@@ -29,6 +29,9 @@
 		DC58F6E41AC9487F00041E66 /* Hangman12.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6D51AC9487F00041E66 /* Hangman12.gif */; };
 		DC58F6E51AC9487F00041E66 /* Hangman13.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6D61AC9487F00041E66 /* Hangman13.gif */; };
 		DC58F6E61AC9487F00041E66 /* Hangman14.gif in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6D71AC9487F00041E66 /* Hangman14.gif */; };
+		DC58F6EA1AC9493500041E66 /* HangmanWords.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6E81AC9493500041E66 /* HangmanWords.m */; };
+		DC58F6EB1AC9493500041E66 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC58F6E91AC9493500041E66 /* words.plist */; };
+		DC58F6EE1AC94C4500041E66 /* HangmanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC58F6ED1AC94C4500041E66 /* HangmanViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,11 @@
 		DC58F6D51AC9487F00041E66 /* Hangman12.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Hangman12.gif; sourceTree = "<group>"; };
 		DC58F6D61AC9487F00041E66 /* Hangman13.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Hangman13.gif; sourceTree = "<group>"; };
 		DC58F6D71AC9487F00041E66 /* Hangman14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Hangman14.gif; sourceTree = "<group>"; };
+		DC58F6E71AC9493500041E66 /* HangmanWords.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanWords.h; sourceTree = "<group>"; };
+		DC58F6E81AC9493500041E66 /* HangmanWords.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanWords.m; sourceTree = "<group>"; };
+		DC58F6E91AC9493500041E66 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
+		DC58F6EC1AC94C4500041E66 /* HangmanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HangmanViewController.h; sourceTree = "<group>"; };
+		DC58F6ED1AC94C4500041E66 /* HangmanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HangmanViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +120,14 @@
 		DC58F6A11AC938B500041E66 /* Hangman */ = {
 			isa = PBXGroup;
 			children = (
+				DC58F6E71AC9493500041E66 /* HangmanWords.h */,
+				DC58F6E81AC9493500041E66 /* HangmanWords.m */,
+				DC58F6E91AC9493500041E66 /* words.plist */,
 				DC58F6A61AC938B500041E66 /* AppDelegate.h */,
 				DC58F6A71AC938B500041E66 /* AppDelegate.m */,
 				DC58F6A91AC938B500041E66 /* ViewController.h */,
+				DC58F6EC1AC94C4500041E66 /* HangmanViewController.h */,
+				DC58F6ED1AC94C4500041E66 /* HangmanViewController.m */,
 				DC58F6AA1AC938B500041E66 /* ViewController.m */,
 				DC58F6AC1AC938B500041E66 /* Main.storyboard */,
 				DC58F6AF1AC938B500041E66 /* Images.xcassets */,
@@ -257,6 +270,7 @@
 				DC58F6E61AC9487F00041E66 /* Hangman14.gif in Resources */,
 				DC58F6E11AC9487F00041E66 /* Hangman9.gif in Resources */,
 				DC58F6E01AC9487F00041E66 /* Hangman8.gif in Resources */,
+				DC58F6EB1AC9493500041E66 /* words.plist in Resources */,
 				DC58F6B31AC938B500041E66 /* LaunchScreen.xib in Resources */,
 				DC58F6E31AC9487F00041E66 /* Hangman11.gif in Resources */,
 				DC58F6DD1AC9487F00041E66 /* Hangman5.gif in Resources */,
@@ -287,8 +301,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC58F6EE1AC94C4500041E66 /* HangmanViewController.m in Sources */,
 				DC58F6AB1AC938B500041E66 /* ViewController.m in Sources */,
 				DC58F6A81AC938B500041E66 /* AppDelegate.m in Sources */,
+				DC58F6EA1AC9493500041E66 /* HangmanWords.m in Sources */,
 				DC58F6A51AC938B500041E66 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

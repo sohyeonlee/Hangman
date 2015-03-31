@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Hangman View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HangmanViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Letter:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNt-1A-odg">
+                                <rect key="frame" x="16" y="428" width="60" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Q8Z-ne-TA4"/>
+                                    <constraint firstAttribute="height" constant="32" id="pfT-Vf-aZ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hangman0.gif" translatesAutoresizingMaskIntoConstraints="NO" id="kKV-83-LsN">
+                                <rect key="frame" x="63" y="20" width="475" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="wMM-cg-MAQ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-Ej-2vL">
+                                <rect key="frame" x="84" y="431" width="32" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="namePhonePad"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8bC-Xf-vdC" id="mRq-Yc-ESO"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiM-yS-ygr">
+                                <rect key="frame" x="63" y="491" width="475" height="70"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xNt-1A-odg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="6gi-sU-52i"/>
+                            <constraint firstItem="kKV-83-LsN" firstAttribute="leading" secondItem="qiM-yS-ygr" secondAttribute="leading" id="FrF-mC-ri5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kKV-83-LsN" secondAttribute="trailing" constant="46" id="QZb-kB-h1b"/>
+                            <constraint firstItem="qiM-yS-ygr" firstAttribute="top" secondItem="xNt-1A-odg" secondAttribute="bottom" constant="31" id="SmF-XH-Pgc"/>
+                            <constraint firstItem="kKV-83-LsN" firstAttribute="trailing" secondItem="qiM-yS-ygr" secondAttribute="trailing" id="d4z-2R-VRn"/>
+                            <constraint firstItem="xNt-1A-odg" firstAttribute="top" secondItem="kKV-83-LsN" secondAttribute="bottom" constant="8" symbolic="YES" id="j7k-CT-ASL"/>
+                            <constraint firstItem="9RM-Ej-2vL" firstAttribute="leading" secondItem="xNt-1A-odg" secondAttribute="trailing" constant="8" symbolic="YES" id="lLQ-MY-NKe"/>
+                            <constraint firstItem="kKV-83-LsN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="47" id="lxE-s7-fiM"/>
+                            <constraint firstItem="kKV-83-LsN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oBG-Rc-eMs"/>
+                            <constraint firstItem="xNt-1A-odg" firstAttribute="baseline" secondItem="9RM-Ej-2vL" secondAttribute="baseline" id="vwy-WV-9UW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hangmanImg" destination="kKV-83-LsN" id="Gdt-85-ZhQ"/>
+                        <outlet property="hangmanWord" destination="qiM-yS-ygr" id="QXv-CK-FpM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Hangman0.gif" width="257" height="288"/>
+    </resources>
 </document>
