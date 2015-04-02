@@ -15,7 +15,7 @@
 @synthesize correctWord;
 @synthesize wrongGuesses;
 
--(void) checkLetter: (NSString *) inLetter
+-(void) checkHangmanLetter: (NSString *) inLetter
 {
     bool match = NO;
     
@@ -86,11 +86,11 @@
 }
 -(void) setupHangmanWord: (NSString *) hangmanWord
 {
-    
     self.wrongGuesses = @"";
     self.hangmanWord.text = @"";
     self.hangmanImg.image = [UIImage imageNamed:@"Hangman0.gif"];
-    for (int i = 0; i < self.hangmanWord.text.length; i++)
+    NSLog(self.correctWord);
+    for (int i = 0; i < self.correctWord.length; i++)
     {
         self.hangmanWord.text = [self.hangmanWord.text stringByAppendingString:@"-"];
     }
@@ -115,7 +115,6 @@
 {
     [super viewDidLoad];
     HangmanWords *newWord = [[HangmanWords alloc] init];
-    NSLog([newWord getWord]);
     self.correctWord = [newWord getWord];
     [self setupHangmanWord:self.correctWord];
 }
