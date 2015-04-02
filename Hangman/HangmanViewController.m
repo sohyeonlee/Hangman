@@ -18,9 +18,9 @@
 -(void) checkHangmanLetter: (NSString *) inLetter
 {
     bool match = NO;
-    
+   
     NSRange hangmanRange;
-    char currchar = [inLetter characterAtIndex:0];
+    char currchar = [[inLetter uppercaseString] characterAtIndex:0];
     for (int i = 0; i < self.correctWord.length; i++)
     {
         char temp = [self.correctWord characterAtIndex:i];
@@ -89,7 +89,6 @@
     self.wrongGuesses = @"";
     self.hangmanWord.text = @"";
     self.hangmanImg.image = [UIImage imageNamed:@"Hangman0.gif"];
-    NSLog(self.correctWord);
     for (int i = 0; i < self.correctWord.length; i++)
     {
         self.hangmanWord.text = [self.hangmanWord.text stringByAppendingString:@"-"];
@@ -115,7 +114,11 @@
 {
     [super viewDidLoad];
     HangmanWords *newWord = [[HangmanWords alloc] init];
-    self.correctWord = [newWord getWord];
+    NSArray *array = [[newWord getWord] componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+    int index = rand() % [array count];
+
+    self.correctWord = [array objectAtIndex:index];
+    NSLog(self.correctWord);
     [self setupHangmanWord:self.correctWord];
 }
 
